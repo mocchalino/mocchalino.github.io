@@ -12,65 +12,6 @@
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script> 
 <script src="js/modernizr.custom.js"></script>
-<!----Calender -------->
-  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
-  <script src="js/underscore-min.js"></script>
-  <script src= "js/moment-2.2.1.js"></script>
-  <script src="js/clndr.js"></script>
-  <script src="js/site.js"></script>
-<!----End Calender -------->
-	<script src="js/Chart.js"></script>
-<link href="css/jquery.nouislider.css" rel="stylesheet">
-<script src="js/jquery.nouislider.js"></script>
-<link rel="stylesheet" type="text/css" href="css/fd-slider.css">	
-	<script type="text/javascript" src="js/fd-slider.js"></script>
-<!----video -------->	
-<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(document).ready(function(){
-
-	$("#jquery_jplayer_1").jPlayer({
-		ready: function () {
-			$(this).jPlayer("setMedia", {
-				title: "Big Buck Bunny",
-				m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
-				poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
-			});
-		},
-		swfPath: "../../dist/jplayer",
-		supplied: "m4v",
-		size: {
-			width: "379px",
-			height: "250px",
-			cssClass: "jp-video-360p"
-		},
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true,
-		remainingDuration: true,
-		toggleDuration: true
-	});
-});
-//]]>
-</script>
-<!----//video -------->
-<!-- //js -->
-<!-- start-smoth-scrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
-<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-</script>
-<!--//end-smoth-scrolling-->
-
 </head>
 <body>
 	<!-- content -->
@@ -143,8 +84,8 @@ $(document).ready(function(){
 								<div class="col-md-12" style="padding-left:7%;font-size:medium;">
 									<!--list Education-->
 									<ul>
-										<li>Insan Rabbani Junior Highschool (2011-2014)</li>
-										<li>Pesat Informatics Vocational Highschool (2014-2017)</li>
+										<li>Insan Rabbani Junior High School (2011-2014)</li>
+										<li>Pesat Informatics Vocational School (2014-2017)</li>
 										<li>School of Vocational Studies - IPB University (2017-2019)</li>
 									</ul>
 								<hr>
@@ -156,9 +97,9 @@ $(document).ready(function(){
 											<li>PT. Aisy Tekno, Bogor (2016-2017)</li>
 											<li>Freelance Programmer (2017-Present)</li>
 										</ul>
-										</div>
 								</div>
-								<div class="col-md-12 circles" style="margin-left:1%;margin-top:1%;">
+								<div class="col-md-12 circles" style="margin-left:1%;">
+									<hr>
 									<h3><b>Personal Skills</b></h3>
 									<div class="col-md-3" style="padding-left:7%;padding-top:25px;font-size:medium;">
 										<!--list skill-->
@@ -211,6 +152,7 @@ $(document).ready(function(){
 										</ul>
 									</div>
 								</div>
+								</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
@@ -218,21 +160,5 @@ $(document).ready(function(){
 		</div>
 	</div>
     <script src="js/bootstrap.js"> </script>
-	<script>
-		function myFunction() {
-		/* Get the text field */
-		var copyText = document.getElementById("myInput");
-
-		/* Select the text field */
-		copyText.alt;
-		copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-		/* Copy the text inside the text field */
-		document.execCommand("copy");
-
-		/* Alert the copied text */
-		alert("Copy ke Clipboard" + copyText.value);
-		}
-	</script>
 </body>
 </html>
