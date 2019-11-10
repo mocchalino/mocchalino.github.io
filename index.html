@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Personal Vitae - Mohamad Nur Ali</title>
+<title>Curiculum Vitae</title>
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <!-- Custom Theme files -->
@@ -74,19 +74,16 @@ $(document).ready(function(){
 </head>
 <body>
 	<!-- content -->
-	<div class="content" style="padding: 5% 0 5% 0">
+	<div class="content" style="padding: 2% 0 5% 0;background: #fff;">
 		<div class="container">
 			<!--//navigation-->
 			<div class="content-btm">
-				<div class="col-md-4 content-right" style="border-radius: 20px 20px 0px 0px;margin-bottom:10px;">
-					<div class="cntnt-img" style="border-radius: 20px 20px 0px 0px;">
-					</div>
-					<div class="bnr-img" style="margin-left:-20px;">
-						<img src="images/img2.jpg" alt="" style="width:160px;"/>
-					</div>
-					<div class="bnr-text">
+				<div class="col-md-4 content-right" style="border-radius: 0px 20px 0px 0px;margin-bottom:10px;">
+						<img src="images/img2.jpg" alt="" style="float:left;border-radius:100%;margin-top:20%;width:160px;padding-right:10px;padding-bottom:25px;"/>
+					<div class="bnr-text" style="text-align: left;">
 						<h1 style="margin-top:60px;">Mohamad Ali</h1>
 						<h5>Full Stack Developer</h5>
+						<hr>
 						<p>
 							" Sometimes the people with the worst past, create the best future. "
 							<br>
@@ -101,31 +98,28 @@ $(document).ready(function(){
 								(Leonardo Da Vinci)</small>
 							<br>
 							<br>
-							<b>Hobbies: </b>Movies, Music, Martial Arts, Foods, Football.
+							<b>Hobbies: </b>Cats, Musics, Movies, Foods, Martial Arts.
 							<br>
 							<br>
 							<br>
 						</p>
 					</div>
+					<style>.designer a:hover{transition: 1s;opacity: .3;}</style>
 					<div class="designer" style="border:0px solid white;">
 							<h3 style="margin-top:3%;">Share About Me</h3>
 							<h5>mocchalino@gmail.com</h5>
-							<p>Share this guy.</p>
-							<div class="social-icons">
-								<ul>
-									<li><a href="#"><span>26k</span></a></li>                                             
-									<li><a href="#" class="twt"><span>12k</span> </a></li>
-									<li><a href="#" class="dbl"><span>8k</span> </a></li>  
-									<li><a href="#" class="gp"><span>50k</span> </a></li>  
-									<div class="clearfix"></div>
-								</ul>
-							</div>
+							<p>Share this guy.<br>
+								<a href="#"><img src="images/social-fb.png" style="height:30px;"></a>
+								<a href="#"><img src="images/social-twitter.png" style="height:30px;"></a>
+								<a href="#"><img src="images/social-linked.png" style="height:32px;"></a>
+								<a href="javascript:void();" id="myInput"><img src="images/copy.png" style="height:32px;" alt="https://mocchalino.github.io"></a>
+							</p>
 					</div>
 				</div>
 				<div class="col-md-8 content-grids">
 						<div class="col-md-12 circles" style="margin-left:1%;">
 								<h3><b>About Me</b></h3>
-								<div class="col-md-12" style="padding-left:7%;padding-bottom:5%;font-size:medium;">
+								<div class="col-md-12" style="padding-left:7%;font-size:medium;">
 									<!--list about me-->
 									<p style="text-align: left;">
 										Ipsum is simply dummy text of the printing and
@@ -141,15 +135,19 @@ $(document).ready(function(){
 										and more recently with desktop publishing software l
 										ike Aldus PageMaker including versions of Lorem Ipsum.
 									</p>
+									<hr>
+
 								</div>
+								<hr>
 								<h3><b>Education</b></h3>
-								<div class="col-md-12" style="padding-left:7%;padding-bottom:5%;font-size:medium;">
+								<div class="col-md-12" style="padding-left:7%;font-size:medium;">
 									<!--list Education-->
 									<ul>
-										<li>SMP Insan Rabbani, Bekasi (2011-2014)</li>
-										<li>SMK Informatika Pesat (2014-2017)</li>
-										<li>Sekolah Vokasi Institut Pertanian Bogor (2017-2019)</li>
+										<li>Insan Rabbani Junior Highschool (2011-2014)</li>
+										<li>Pesat Informatics Vocational Highschool (2014-2017)</li>
+										<li>School of Vocational Studies - IPB University (2017-2019)</li>
 									</ul>
+								<hr>
 								</div>
 								<h3><b>Working Experience</b></h3>
 								<div class="col-md-12" style="padding-left:7%;font-size:medium;">
@@ -220,6 +218,21 @@ $(document).ready(function(){
 		</div>
 	</div>
     <script src="js/bootstrap.js"> </script>
+	<script>
+		function myFunction() {
+		/* Get the text field */
+		var copyText = document.getElementById("myInput");
 
+		/* Select the text field */
+		copyText.alt;
+		copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+		/* Copy the text inside the text field */
+		document.execCommand("copy");
+
+		/* Alert the copied text */
+		alert("Copy ke Clipboard" + copyText.value);
+		}
+	</script>
 </body>
 </html>
